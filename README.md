@@ -13,7 +13,7 @@ Currently, four flows are supported:
 </a>  
 
 
-<a href="https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html"><img src="http://i.ytimg.com/vi/pvgPOb8_gvw/0.jpg" width="200px"></a>
+<a href="https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html">  <img src="https://github.com/sdsgisd/curvature_flows/blob/master/evolving_curve.png" width="200px"> </a> <a href="https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html"><img src="http://i.ytimg.com/vi/pvgPOb8_gvw/0.jpg" width="200px"></a>
 <img src="http://i.ytimg.com/vi/pvgPOb8_gvw/0.jpg" width="200px">
 
 
