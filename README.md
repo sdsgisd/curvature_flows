@@ -12,9 +12,9 @@ Currently, four flows are supported:
 <a href="https://www.youtube.com/watch?v=pvgPOb8_gvw"><img src="http://i.ytimg.com/vi/pvgPOb8_gvw/0.jpg" width="400px"></a>
 
 <!-- Lorem ipsum -->
-    <div>
+
         <p>Lorem ipsum</p>
-    </div>
+    
 
 [Y]:https://www.youtube.com/watch?v=pvgPOb8_gvw
 Author: Sadashige Ishida  
