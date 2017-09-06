@@ -1,0 +1,85 @@
+/** {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}*/
+
+html, body {
+    /*margin: 0; padding: 0;*/
+    font-family: 'Computer Modern Serif', serif;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #faffff;
+    font-size: 20px;
+    /*color: #333;*/
+}
+
+body {
+  position: relative;
+  padding: 0;
+
+  /*height:100%;*/
+  /*background: #fdf;
+  font: 30px sans-serif;*/
+}
+
+canvas {
+    /*width: 85%;*/
+    /*width: 80%;*/
+
+    height:450px;
+    width:640px;
+
+    /*height: 10%;*/
+    /*border: 1px solid #333;*/
+    background-color: White
+
+}
+
+a, a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #569CE7;
+    text-decoration: underline;
+}
+#clear {
+
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+
+}
+
+#clear:hover {
+    cursor: pointer;
+}
+
+@-ms-viewport, @viewport {
+    width: device-width;
+    initial-scale: 1;
+    maximum-scale: 1;
+}
+
+ /* For smartphones*/
+/*max-device-width is as same as screen.width*/
+@media only screen and (max-device-width: 500px) {
+  body {
+      text-align: center;
+      background-color: #faffff;
+      font-size: 60px;
+      color: #cccccc;
+  }
+  canvas {
+      width: 80%;
+
+      height:50%;
+      /*height:360px;*/
+      /*width:640px;*/
+      /*border: 1px solid #333;*/
+      background-color: White
+
+  }
+
+}
