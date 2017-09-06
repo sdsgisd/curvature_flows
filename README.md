@@ -55,4 +55,4 @@ For making a movie with libav,
 
 * Volume preserving hyperbolic mean curvature flow (which, in fact, describes the dynamics of a soap bubble).  
 <img src="https://latex.codecogs.com/gif.latex?\frac{d^2x}{dt^2}=(-H+\Delta&space;p)n"/>
-<img src="https://latex.codecogs.com/gif.latex?\mbox{where}\&space;\Delta&space;p(t)\mbox{\&space;is\&space;a\&space;real\&space;value\&space;such\&space;that\&space;the\&space;enclosed\&space;area}\&space;A\mbox{\&space;satisfies}\&space;\frac{dA}{dt}=0."/>
+<img src="https://latex.codecogs.com/gif.latex?\mbox{where}\&space;\Delta&space;p(t)\mbox{\&space;is\&space;a\&space;real\&space;value\&space;such\&space;that\&space;the\&space;area}\&space;A\mbox{\&space;satisfies}\&space;\frac{dA}{dt}=0."/>
