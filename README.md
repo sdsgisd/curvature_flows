@@ -8,6 +8,9 @@ Currently, four flows are supported:
 * Volume preserving hyperbolic mean curvature flow
 
 [Demo][D]
+<a href="https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html">  
+<img src="http://i.ytimg.com/vi/pvgPOb8_gvw/0.jp" width="500px">
+</a>  
 
 [Youtube Video][Y]
 <a href="https://www.youtube.com/watch?v=pvgPOb8_gvw">  
