@@ -336,6 +336,7 @@ function specify_fillStyle(){
 }
 
 
+
 function draw() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);

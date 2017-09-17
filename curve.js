@@ -14,6 +14,11 @@ var Curve = function(vertices) {
     }
 }
 
+function specify_strokStyle(){
+  ctx.strokeStyle='#00dfdf';//[0.1,0.8,0.1];
+}
+
+
 Curve.prototype.draw = function(temp_curve) {
     target_vertices = this.vertices;
 
@@ -21,12 +26,9 @@ Curve.prototype.draw = function(temp_curve) {
         return;
     }
 
-    if (typeof TOP_PAGE === "undefined") {
-    ctx.strokeStyle = 'white'; // mouse.color;
-    }
-    else{
-      ctx.strokeStyle = 'black';
-    }
+
+    specify_strokStyle();
+
     // ctx.lineWidth =3;
 
     ctx.beginPath();
