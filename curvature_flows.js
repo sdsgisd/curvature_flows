@@ -143,12 +143,12 @@ $(window).on('load', function() {
 
         if (e.keyCode == 83) { //s
 
-            step()
+            step();
         }
 
         if (e.keyCode == 82) { //r
 
-            reset()
+            reset();
 
         }
 
@@ -187,7 +187,6 @@ function init() {
         startY: 0,
         x: 0,
         y: 0,
-        color: "black",
     };
     var borderWidth = 0;
 
@@ -199,7 +198,7 @@ function init() {
         var rect = canvas.getBoundingClientRect();
 
         mouse.x = (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
-            mouse.y = (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
+        mouse.y = (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
 
         if (Mouse_Position_Info) {
             if (document.getElementById("mouse_position_info") != null) {
@@ -229,6 +228,8 @@ function init() {
     }
 
     canvas.onmousedown = mousedown_func;
+
+
 
     function mousedown_func(e) {
         drawing = true;
