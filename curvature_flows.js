@@ -1,5 +1,5 @@
 MaxSaveImage = 500;
-Position_Info = false;
+Mouse_Position_Info = false;
 Evolving = false;
 Draw_Tangents_and_Normals = false;
 Num_Max_Edge = 200; //100;
@@ -201,9 +201,9 @@ function init() {
         mouse.x = (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
             mouse.y = (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
 
-        if (Position_Info) {
-            if (document.getElementById("info") != null) {
-                document.getElementById("info").innerHTML =
+        if (Mouse_Position_Info) {
+            if (document.getElementById("mouse_position_info") != null) {
+                document.getElementById("mouse_position_info").innerHTML =
                     " clientX = " + Math.floor(e.clientX) + "px" +
                     " clientY = " + Math.floor(e.clientY) + "px" + '<br>' +
                     " rect.left = " + Math.floor(rect.left) + "px" +

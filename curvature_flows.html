@@ -2,81 +2,82 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Evolving curves under different curvature flows</title>
-    <meta name="Description" content="" />
-    <meta name="Keywords" content="" />
+  <meta charset="UTF-8" />
+  <title>Evolving curves under different curvature flows</title>
+  <meta name="Description" content="" />
+  <meta name="Keywords" content="" />
 
-    <link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
 
-    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!--  For google analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  <!--  For google analytics-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-104155470-2', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-104155470-2', 'auto');
+    ga('send', 'pageview');
 
-    </script>
+  </script>
 
-    <!-- for Mathjax -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true }, CommonHTML: { matchFontHeight: false } });
-    </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+  <!-- for Mathjax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true }, CommonHTML: { matchFontHeight: false } });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="lib/numeric-1.2.6.js"></script>
 
 </head>
 
 <body>
-    <canvas id="canvas">
-        <a id="link"></a>
-    </canvas>
+  <canvas id="canvas">
+    <a id="link"></a>
+  </canvas>
 
-    <p id="flow_type"><p/>
+  <p id="flow_type"><p/>
 
-    <div id="explanation">
-        Mouse drag: add a new curve.
-        <br>
-        <a onclick="run_and_stop();return false;">Space: Turn on / off the clock.</a>
-        <br>
-        <a onclick="step();return false;">
-          s: Proceed one time step.</a>
+    <div class="explanation">
+      Mouse drag: add a new curve.
+      <br>
+      <a onclick="run_and_stop();return false;">Space: Turn on / off the clock.</a>
+      <br>
+      <a onclick="step();return false;">
+        s: Proceed one time step.</a>
         <br>
         <a onclick="reset();return false;">r: Reset.</a>
         <br>
         <a onclick="reset();
-      set_curvature_type(MCF_Curve, VPMCF_Curve, 'mean curvature flow', 'volume preserving mean curvature flow');
-      return false;">
-      m: Switch flow to mean curvature flow / volume preserving mean curvature flow.</a>
+        set_curvature_type(MCF_Curve, VPMCF_Curve, 'mean curvature flow', 'volume preserving mean curvature flow');
+        return false;">
+        m: Switch flow to mean curvature flow / volume preserving mean curvature flow.</a>
         <br>
         <a onclick="reset();
-      set_curvature_type(HMCF_Curve, VPHMCF_Curve, 'heyperbolic mean curvature flow', 'volume preserving heyperbolic mean curvature flow');
-      return false;"> h: Switch flow to heyperbolic mean curvature flow / volume preserving hyperbolic mean curvature flow (which in fact describes the dynamics of a soap bubble).</a>
+        set_curvature_type(HMCF_Curve, VPHMCF_Curve, 'heyperbolic mean curvature flow', 'volume preserving heyperbolic mean curvature flow');
+        return false;"> h: Switch flow to heyperbolic mean curvature flow / volume preserving hyperbolic mean curvature flow (which in fact describes the dynamics of a soap bubble).</a>
         <br>
         <a onclick="tangents();normals();
-      Draw_Tangents_and_Normals = !Draw_Tangents_and_Normals;return false;">
-      t: Show tangents and normals.
-        </a>
+        Draw_Tangents_and_Normals = !Draw_Tangents_and_Normals;return false;">
+        t: Show tangents and normals.
+      </a>
     </div>
     <br>
-    <div id="info"></div>
+    <div id="mouse_position_info">
+    </div>
 
-        <br>
-        <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="lib/numeric-1.2.6.js"></script>
-        <script type="text/javascript" src="alias.js"></script>
-        <script type="text/javascript" src="curve.js"></script>
-        <script type="text/javascript" src="mcf_curve.js"></script>
-        <script type="text/javascript" src="hmcf_curve.js"></script>
-        <script type="text/javascript" src="test.js"></script>
 
-        <script type="text/javascript" src="curvature_flows.js"></script>
+    <script type="text/javascript" src="alias.js"></script>
+    <script type="text/javascript" src="curve.js"></script>
+    <script type="text/javascript" src="mcf_curve.js"></script>
+    <script type="text/javascript" src="hmcf_curve.js"></script>
+    <script type="text/javascript" src="test.js"></script>
 
-</body>
+    <script type="text/javascript" src="curvature_flows.js"></script>
+  </body>
 
-</html>
+  </html>

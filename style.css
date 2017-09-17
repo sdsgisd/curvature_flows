@@ -10,8 +10,9 @@ html, body {
     overflow-x: hidden;
     text-align: center;
     background-color: #faffff;
-    font-size: 20px;
+    font-size: 18px;
     /*color: #333;*/
+
 }
 
 body {
@@ -22,6 +23,8 @@ body {
   /*background: #fdf;
   font: 30px sans-serif;*/
 }
+
+
 
 canvas {
     /*width: 85%;*/
@@ -68,7 +71,7 @@ a:hover {
   body {
       text-align: center;
       background-color: #faffff;
-      font-size: 60px;
+      font-size: 20px;
       color: #cccccc;
   }
   canvas {
