@@ -323,7 +323,6 @@ function step() {
         curves.forEach(function(curve) {
             curve.compute_tangents();
             curve.compute_normals();
-
         });
     }
 }
