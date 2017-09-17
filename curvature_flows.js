@@ -332,15 +332,17 @@ function message_on_canvas(){
   //Write something if you want to show messages on the canvas.
 }
 
+function specify_fillStyle(){
+  ctx.fillStyle = 'black';
+}
+
+
 function draw() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    if (typeof TOP_PAGE === "undefined") {
-        ctx.fillStyle = 'black';
-    } else {
-        ctx.fillStyle = 'white';
 
-    }
+    specify_fillStyle();
+
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 
