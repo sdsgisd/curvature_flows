@@ -9,7 +9,7 @@ Currently, four flows are supported:
 
 [[Browser demo]][D]  
 <a href="https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html">  <img src="https://github.com/sdsgisd/curvature_flows/blob/master/evolving_curve.png" width="200px"> </a>  
-[[Youtube Video]][Y]  
+[[Youtube video]][Y]  
 <a href="https://www.youtube.com/watch?v=pvgPOb8_gvw"><img src="http://i.ytimg.com/vi/pvgPOb8_gvw/0.jpg" width="200px"></a>
 
 [Y]:https://www.youtube.com/watch?v=pvgPOb8_gvw
