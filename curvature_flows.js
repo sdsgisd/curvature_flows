@@ -328,6 +328,10 @@ function step() {
     }
 }
 
+function message_on_canvas(){
+  //Write something if you want to show messages on the canvas.
+}
+
 function draw() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -339,18 +343,8 @@ function draw() {
     }
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    if (typeof TOP_PAGE !== "undefined") {
-        ctx.fillStyle = 'black';
-        ctx.lineWidth = 1;
-        ctx.font = "30px cursive, 'Times New Roman', serif";
-        if (innerWidth < 500) {
-            ctx.font = "60px cursive, 'Times New Roman', serif";
-        }
-        ctx.fillText('2D soap bubble simulator: Draw a curve.', 10, 50);
-        ctx.font = "30px cursive, 'Times New Roman', serif";
-        ctx.fillText("r key: Reset.", canvas.width - 160, canvas.height - 20);
 
-    }
+    message_on_canvas();
 
     if (drawing) {
         local_curve.draw(temp_curve = true);
