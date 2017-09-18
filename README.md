@@ -13,10 +13,10 @@ Currently, four flows are supported:
 <a href="https://www.youtube.com/watch?v=pvgPOb8_gvw"><img src="http://i.ytimg.com/vi/pvgPOb8_gvw/0.jpg" width="200px"></a>
 
 [Y]:https://www.youtube.com/watch?v=pvgPOb8_gvw
+[D]:https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html
 Author: Sadashige Ishida  
 License: MIT
 
-[D]:https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html
 
 ## Basic usage  
 [MOUSE SETTING]  
