@@ -23,7 +23,7 @@ License: MIT
 Mouse drag: add a new curve.  
 
 [KEY SETTING]  
-Space: Turn on / off the clock.  
+Space: Turn on/off the clock.  
 s: Proceed one time step.  
 r: Reset.  
 t: Show tangents and normals.  
