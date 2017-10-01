@@ -54,7 +54,6 @@ VPMCF_Curve = function(vertices) {
 VPMCF_Curve.prototype = Object.create(MCF_Curve.prototype, {value: {constructor: VPMCF_Curve}});
 
 VPMCF_Curve.prototype.step=function(){
-  this.compute_normals();
 
   MCF_Curve.prototype.step.call(this);
 
