@@ -17,25 +17,6 @@ HMCF_Curve.prototype.init=function(){
 
 }
 
-HMCF_Curve.prototype.compute_curvature_normals = function() {
-  var n_ev=this.vertices.length;
-  for(var i=0;i<n_ev;++i){
-      const prev=(i-1+n_ev)%n_ev;
-      const next=(i+1)%n_ev;
-      const p=this.vertices[i].pos;
-      const q1=this.vertices[prev].pos;
-      const q2=this.vertices[next].pos;
-
-      const dist1=norm(sub(p,q1));
-      const dist2=norm(sub(p,q2));
-
-      const normal=add(mul(1/dist1,sub(p,q1)),mul(1/dist2,sub(p,q2)));
-      this.vertices[i].normal=normal;
-
-  }
-
-}
-
 HMCF_Curve.prototype.compute_normals=function(){
   this.compute_curvature_normals();
 
