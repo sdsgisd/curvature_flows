@@ -222,16 +222,10 @@ Curve.prototype.normalize = function() {
 
             if (edge_counted >= n_ev) {
 
-                //vi==(int)newVertices.size()-1;である。
-                //最後の辺が近くにありすぎてnanになること対策
                 const VERYSMALL_FOR_NORMALIZE = 1e-5;
 
+                //For too close vertices.
                 if (norm(sub(new_vertices[new_vi].pos, new_vertices[0].pos)) < VERYSMALL_FOR_NORMALIZE) {
-
-                    //下の別の書き方。
-                    //                    std::vector<Vertex*>::iterator temp=
-                    //                    newVertices.erase(newVertices.end()-1);
-                    //                    devare *temp;
 
                     new_vertices.pop();
 
